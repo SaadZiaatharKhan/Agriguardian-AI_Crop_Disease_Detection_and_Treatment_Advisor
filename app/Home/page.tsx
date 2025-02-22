@@ -7,6 +7,7 @@ import Card from "@/components/home/card";
 import FetchData from "@/components/fetchdata";
 import SeverityChart from "@/components/home/severity-chart";
 import Fertilizer from "@/components/home/fertilizer";
+import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   const [data, setData] = useState<any>(null);
@@ -45,7 +46,10 @@ export default function Home() {
       </div>
 
       {/* Language Selector */}
-      <div className="relative inline-block text-left my-4">
+      <div className="w-full relative text-left my-4 flex justify-between p-6">
+      <div>
+      <UserButton />
+      </div>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="px-4 py-2 bg-blue-600 text-white rounded-lg focus:outline-none"

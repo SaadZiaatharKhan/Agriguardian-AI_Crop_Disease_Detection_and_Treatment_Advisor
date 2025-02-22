@@ -14,6 +14,10 @@ export default async function Chat() {
         <UserButton />
         Hello {user?.firstName}
       </div>
+      <div>
+        kdfksjfsdjkjadj
+      </div>
+
     </div>
   );
 }
