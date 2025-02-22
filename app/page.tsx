@@ -20,7 +20,7 @@ export default function Home() {
       </div>
       <div className="text-5xl font-sans font-semibold text-green-800 m-5 p-5 dark:text-white">Amplify Your Farm Productivity</div>
       <div className="flex flex-col p-5 m-5 w-full h-full justify-center items-center md:flex-row">
-        <div>
+        <div >
           <video src="/assets/videos/site-start-1.mp4" autoPlay muted loop width="700" height="580"></video>
         </div>
         <div>
