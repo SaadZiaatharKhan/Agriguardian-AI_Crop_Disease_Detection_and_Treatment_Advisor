@@ -9,12 +9,17 @@ import SeverityChart from "@/components/home/severity-chart";
 import Fertilizer from "@/components/home/fertilizer";
 
 export default function Home() {
-  const [data, setData] = useState<any>(null); // Updated type
+  const [data, setData] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
+
+  const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const languages = ["English", "Hindi", "Marathi", "Urdu", "Bengali", "Gujarati"];
 
   const refreshData = async () => {
     try {
-      const result = await FetchData();
+      const result = await FetchData(selectedLanguage); // Pass language as a prompt
       setData(result);
     } catch (err) {
       setError("Failed to fetch data");
@@ -22,8 +27,8 @@ export default function Home() {
   };
 
   useEffect(() => {
-    refreshData(); // Fetch initial data
-  }, []);
+    refreshData();
+  }, [selectedLanguage]); // Fetch data whenever language changes
 
   if (error) {
     return <div>{error}</div>;
@@ -34,32 +39,61 @@ export default function Home() {
   }
 
   return (
-    <main className="dark:bg-gradient-to-b from-slate-950 to-blue-950 bg-white h-auto lg:w-full w-fit backdrop-blur-md md:flex flex-col select-none cursor-pointer justify-center items-center">
+    <main className="dark:bg-gradient-to-b from-slate-950 to-blue-950 bg-white h-auto lg:w-full w-fit backdrop-blur-md md:flex flex-col select-none cursor-pointer justify-center items-center relative">
       <div className="opacity-0 dark:opacity-100 w-full">
         <Lamp />
       </div>
+
+      {/* Language Selector */}
+      <div className="relative inline-block text-left my-4">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="px-4 py-2 bg-blue-600 text-white rounded-lg focus:outline-none"
+        >
+          {selectedLanguage} ▼
+        </button>
+
+        {isOpen && (
+          <div className="absolute mt-2 w-40 bg-white border border-gray-300 rounded-lg shadow-lg">
+            {languages.map((language) => (
+              <button
+                key={language}
+                onClick={() => {
+                  setSelectedLanguage(language);
+                  setIsOpen(false);
+                }}
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-100 w-full text-left"
+              >
+                {language}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
       <div className="flex flex-col justify-evenly items-center border-transparent w-fit">
-        <div className="">
-          <EnvironmentFactors />
-        </div>
+        <EnvironmentFactors />
+
         <div className="h-full flex -z-1 m-3 p-4 justify-between space-x-5">
           <div className="h-1/4 w-1/3 flex justify-center items-center m-3">
-            <PhotoWindow refreshData={refreshData} />
+            <PhotoWindow refreshData={refreshData} language={selectedLanguage} />
           </div>
           <div className="h-1/4 w-2/3 flex justify-center items-center">
-            <Card data={data} /> {/* Pass the fetched data to Card */}
+            <Card data={data} language={selectedLanguage} /> {/* Pass language to Card */}
           </div>
         </div>
+
         <div className="z-40 h-full w-full flex flex-col items-center justify-center p-3 m-3">
           <h2 className="text-6xl m-2 p-2">SEVERITY</h2>
-            <div className="h-full w-full">
-              <SeverityChart data={data}/>
-            </div>
+          <div className="h-full w-full">
+            <SeverityChart data={data} language={selectedLanguage} /> {/* Pass language */}
+          </div>
         </div>
+
         <div className="h-full w-full flex flex-col items-center justify-center p-3 m-3">
           <h2 className="text-6xl m-2 p-2">FERTILIZER</h2>
           <div>
-            <Fertilizer data={data}/>
+            <Fertilizer data={data} language={selectedLanguage} /> {/* Pass language */}
           </div>
         </div>
       </div>
