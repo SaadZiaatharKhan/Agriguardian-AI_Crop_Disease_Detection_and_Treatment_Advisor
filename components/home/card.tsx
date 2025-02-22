@@ -9,25 +9,25 @@ const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 async function fetchAbout(disease, language) {
-  const prompt = `Tell About ${disease} in 30 words in ${language}.`;
+  const prompt = `Tell About ${disease} in 30 words in ${language} without bold and italic.`;
   const result = await model.generateContent(prompt);
   return result.response.text();
 }
 
 async function fetchCauses(disease, severity, language) {
-  const prompt = `Tell Causes of ${disease} of ${severity} in 50 words in ${language}.`;
+  const prompt = `Tell Causes of ${disease} of ${severity} in 50 words in ${language} without bold and italic.`;
   const result = await model.generateContent(prompt);
   return result.response.text();
 }
 
 async function fetchPrevention(disease, language) {
-  const prompt = `Tell Prevention of ${disease} in 50 words in ${language}.`;
+  const prompt = `Tell Prevention of ${disease} in 50 words in ${language} without bold and italic.`;
   const result = await model.generateContent(prompt);
   return result.response.text();
 }
 
 async function fetchAftermath(disease, severity, language) {
-  const prompt = `Tell What to do after ${disease} of severity ${severity} in 55 words in ${language}.`;
+  const prompt = `Tell What to do after ${disease} of severity ${severity} in 55 words in ${language} without bold and italic.`;
   const result = await model.generateContent(prompt);
   return result.response.text();
 }
@@ -76,7 +76,7 @@ const Card = ({ data, language }) => {
 
   const handleQuery = async (query) => {
     setMessages((prev) => [...prev, { text: query, type: "user" }]);
-    const prompt = `Answer this query related to ${data["Disease Prediction"]} in 40 words: ${query} in ${language}.`;
+    const prompt = `Answer this query related to ${data["Disease Prediction"]} in 40 words: ${query} in ${language} without bold and italic.`;
     const result = await model.generateContent(prompt);
     const response = await result.response.text();
     setMessages((prev) => [...prev, { text: response, type: "bot" }]);
@@ -104,6 +104,7 @@ const Card = ({ data, language }) => {
                 msg.type === "user" ? "bg-blue-500 self-end ml-auto" : "bg-gray-700 self-start"
               }`}
             >
+              {console.log(data)}
               {msg.text}
             </motion.div>
           ))}

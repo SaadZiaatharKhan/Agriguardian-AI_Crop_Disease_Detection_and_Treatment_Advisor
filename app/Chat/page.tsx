@@ -15,7 +15,6 @@ export default async function Chat() {
         Hello {user?.firstName}
       </div>
       <div>
-        kdfksjfsdjkjadj
       </div>
 
     </div>
