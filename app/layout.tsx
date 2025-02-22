@@ -15,7 +15,7 @@ import { Navbar } from "@/components/floating-navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PlantDoc - An AI based application for Crop Disease Detection",
+  title: "AgriGuardian - An AI based application for Crop Disease Detection",
   description: "An AI based application for Crop Disease Detection",
   icons:"favicon.ico"
 };
