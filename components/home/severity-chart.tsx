@@ -7,37 +7,47 @@ import {
   PolarRadiusAxis,
   RadialBar,
   RadialBarChart,
+  Tooltip,
 } from "recharts"
 
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card"
 import { ChartConfig, ChartContainer } from "@/components/ui/chart"
 
 export default function SeverityChart({ data }) {
-  // Update the chartData with the dynamic value of Severity Percentage
+  const severityPercentage = data["Severity Percentage"] || 0;
+  const severityLevel = data["Severity"] || "Unknown";
+
+  // Map severity level to colors using HSL values
+  const severityColors = {
+    Mild: "hsl(50, 100%, 50%)", // Yellow
+    Moderate: "hsl(220, 90%, 55%)", // Blue
+    Critical: "hsl(0, 80%, 50%)", // Red
+    Healthy: "hsl(0, 0%, 100%)", // White
+  };
+
+  const fillColor = severityColors[severityLevel] || "gray";
+
   const chartData = [
     {
       browser: "safari",
-      visitors: data["Severity Percentage"], // Use the value from data
-      fill: "var(--color-safari)",
+      Severity: severityPercentage,
+      fill: fillColor,
     },
-  ]
+  ];
 
   const chartConfig = {
-    visitors: {
-      label: "Visitors",
+    Severity: {
+      label: "Severity",
     },
     safari: {
       label: "Safari",
       color: "hsl(var(--chart-2))",
     },
-  } satisfies ChartConfig
+  } satisfies ChartConfig;
 
   return (
     <Card className="flex flex-col">
@@ -48,7 +58,8 @@ export default function SeverityChart({ data }) {
         >
           <RadialBarChart
             data={chartData}
-            endAngle={100}
+            endAngle={360 * (severityPercentage / 100)}
+            startAngle={0}
             innerRadius={80}
             outerRadius={140}
           >
@@ -59,7 +70,8 @@ export default function SeverityChart({ data }) {
               className="first:fill-muted last:fill-background"
               polarRadius={[86, 74]}
             />
-            <RadialBar dataKey="visitors" background />
+            <RadialBar dataKey="Severity" background isAnimationActive animationDuration={1500} />
+            <Tooltip cursor={false} formatter={(value) => `${value}%`} />
             <PolarRadiusAxis tick={false} tickLine={false} axisLine={false}>
               <Label
                 content={({ viewBox }) => {
@@ -76,17 +88,17 @@ export default function SeverityChart({ data }) {
                           y={viewBox.cy}
                           className="fill-foreground text-4xl font-bold"
                         >
-                          {parseFloat(chartData[0].visitors).toFixed(2)}
+                          {parseFloat(severityPercentage).toFixed(2)}%
                         </tspan>
                         <tspan
                           x={viewBox.cx}
                           y={(viewBox.cy || 0) + 24}
                           className="fill-muted-foreground"
                         >
-                          {`${data["Severity"]}`}
+                          {severityLevel}
                         </tspan>
                       </text>
-                    )
+                    );
                   }
                 }}
               />
@@ -94,6 +106,24 @@ export default function SeverityChart({ data }) {
           </RadialBarChart>
         </ChartContainer>
       </CardContent>
+      <CardFooter className="flex justify-center gap-4 p-4 border-t">
+        <div className="flex items-center gap-2">
+          <span className="w-4 h-4 rounded-full" style={{ backgroundColor: "hsl(50, 100%, 50%)" }}></span>
+          <span className="text-sm">Mild</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="w-4 h-4 rounded-full" style={{ backgroundColor: "hsl(220, 90%, 55%)" }}></span>
+          <span className="text-sm">Moderate</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="w-4 h-4 rounded-full" style={{ backgroundColor: "hsl(0, 80%, 50%)" }}></span>
+          <span className="text-sm">Critical</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="w-4 h-4 rounded-full border" style={{ backgroundColor: "hsl(0, 0%, 100%)" }}></span>
+          <span className="text-sm">Healthy</span>
+        </div>
+      </CardFooter>
     </Card>
-  )
+  );
 }

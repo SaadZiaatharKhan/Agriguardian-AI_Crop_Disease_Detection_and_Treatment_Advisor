@@ -1,0 +1,1320 @@
+{
+    "0": {
+        "disease": "Apple Scab",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "1": {
+        "disease": "Apple Black Rot",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "2": {
+        "disease": "Cedar Apple Rust",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "3": {
+        "disease": "Healthy Apple",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    },
+    "4": {
+        "disease": "Healthy Blueberry",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    },
+    "5": {
+        "disease": "Cherry Powdery Mildew",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "6": {
+        "disease": "Healthy Cherry",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    },
+    "7": {
+        "disease": "Corn Cercospora Leaf Spot",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "8": {
+        "disease": "Maize Common Rust",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "9": {
+        "disease": "Corn Northern Leaf Blight",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "10": {
+        "disease": "Healthy Corn",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    },
+    "11": {
+        "disease": "Grape Black Rot",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "12": {
+        "disease": "Grape Black Measles",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "13": {
+        "disease": "Grape Leaf Blight",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "14": {
+        "disease": "Healthy Grape",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    },
+    "15": {
+        "disease": "Orange Citrus Greening",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "16": {
+        "disease": "Peach Bacterial Spot",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "17": {
+        "disease": "Healthy Peach",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    },
+    "18": {
+        "disease": "Pepper Bell Bacterial Spot",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "19": {
+        "disease": "Healthy Pepper Bell",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    },
+    "20": {
+        "disease": "Potato Early Blight",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "21": {
+        "disease": "Potato Late Blight",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "22": {
+        "disease": "Healthy Potato",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    },
+    "23": {
+        "disease": "Healthy Raspberry",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    },
+    "24": {
+        "disease": "Healthy Soybean",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    },
+    "25": {
+        "disease": "Squash Powdery Mildew",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "26": {
+        "disease": "Strawberry Leaf Scorch",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "27": {
+        "disease": "Healthy Strawberry",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    },
+    "28": {
+        "disease": "Tomato Bacterial Spot",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "29": {
+        "disease": "Tomato Early Blight",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "30": {
+        "disease": "Tomato Late Blight",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "31": {
+        "disease": "Tomato Leaf Mold",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "32": {
+        "disease": "Tomato Septoria Leaf Spot",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "33": {
+        "disease": "Tomato Spider Mites",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "34": {
+        "disease": "Tomato Target Spot",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "35": {
+        "disease": "Tomato Yellow Leaf Curl Virus",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "36": {
+        "disease": "Tomato Mosaic Virus",
+        "severity": {
+            "Mild": {
+                "treatment": {
+                    "organic": "Neem Oil Spray",
+                    "chemical": "Captan Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 800,
+                    "chemical": 1200
+                },
+                "effectiveness": {
+                    "organic": 70,
+                    "chemical": 85
+                }
+            },
+            "Moderate": {
+                "treatment": {
+                    "organic": "Sulfur Dusting",
+                    "chemical": "Mancozeb Fungicide"
+                },
+                "cost_per_acre": {
+                    "organic": 1200,
+                    "chemical": 1800
+                },
+                "effectiveness": {
+                    "organic": 75,
+                    "chemical": 88
+                }
+            },
+            "Critical": {
+                "treatment": {
+                    "organic": "Copper Hydroxide",
+                    "chemical": "Difenoconazole"
+                },
+                "cost_per_acre": {
+                    "organic": 1800,
+                    "chemical": 2500
+                },
+                "effectiveness": {
+                    "organic": 80,
+                    "chemical": 92
+                }
+            }
+        }
+    },
+    "37": {
+        "disease": "Healthy Tomato",
+        "severity": {
+            "None": {
+                "message": "No treatment required. Maintain proper irrigation and soil health."
+            }
+        }
+    }
+}
