@@ -7,6 +7,7 @@ import Card from "@/components/home/card";
 import FetchData from "@/components/fetchdata";
 import SeverityChart from "@/components/home/severity-chart";
 import Fertilizer from "@/components/home/fertilizer";
+import Treatment_Plan from "@/components/home/treatment-plan";
 import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
@@ -41,9 +42,6 @@ export default function Home() {
 
   return (
     <main className="dark:bg-gradient-to-b from-slate-950 to-blue-950 bg-white h-auto lg:w-full w-fit backdrop-blur-md md:flex flex-col select-none cursor-pointer justify-center items-center relative">
-      <div className="opacity-0 dark:opacity-100 w-full">
-        <Lamp />
-      </div>
 
       {/* Language Selector */}
       <div className="w-full relative text-left my-4 flex justify-between p-6">
@@ -100,6 +98,13 @@ export default function Home() {
           <h2 className="text-6xl m-2 p-2">FERTILIZER</h2>
           <div>
             <Fertilizer data={data} language={selectedLanguage} /> {/* Pass language */}
+          </div>
+        </div>
+
+        <div className="h-full w-full flex flex-col items-center justify-center p-3 m-3">
+          <h2 className="text-6xl m-2 p-2">Treatment Plan</h2>
+          <div>
+            <Treatment_Plan data={data} language={selectedLanguage} /> {/* Pass language */}
           </div>
         </div>
       </div>
