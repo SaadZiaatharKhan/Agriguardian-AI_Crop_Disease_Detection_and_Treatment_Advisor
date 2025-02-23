@@ -37,8 +37,23 @@ export default async function Chat() {
         <UserButton />
         Hello {user?.firstName}
       </div>
-      <div>
-        kdfksjfsdjkjadj
+      <div className='container mx-auto p-5'>
+      <h1 className='text-center p-10 font-semibold text-4xl text-white '>Discussion Forums</h1>
+      <div className="flex flex-wrap justify-center rounded-sm">
+        {Topics.map((Topic)=>{
+          return(
+            <div key={Topic.img} className=" w-full shadow-gray-500 shadow-lg rounded-md  md:w-1/4 m-4 flex flex-col  items-center p-8">
+            <Image alt='A learning platform' src={Topic.img} width={300} height={350} className='rounded-lg'></Image>
+            <h2 className=' text-2xl pt-2 text-white'>{Topic.Text}</h2>
+            <p className='flex flex-col pt-3 pb-5 h-72 text-white'>{Topic.desc}</p>
+            <Link href={`/forum/${Topic.slug}`} >
+            <button className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-8 py-2 bg-[#0070f3] rounded-md text-white font-light transition duration-200 ease-linear">
+              Discuss Now
+            </button>
+            </Link>
+            </div>
+            )
+        })}
       </div>
     </div>
 </div>
