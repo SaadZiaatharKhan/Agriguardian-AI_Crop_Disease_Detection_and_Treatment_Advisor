@@ -66,7 +66,7 @@ export default function EnvironmentFactors() {
       {error && <div>{error}</div>}
       
       {weatherData && (
-            <div className="dark:bg-gradient-to-b from-cyan-400 to-slate-950 flex items-center justify-center w-11/12 pt-0 border-solid border-black border-8 rounded-full space-x-1">
+            <div className="dark:bg-slate-900 flex items-center justify-center w-11/12 pt-0 border-solid border-black border-8 rounded-full space-x-1">
             <div className="p-2 m-2 flex items-center justify-center space-x-2">
                 <Image height={50} width={50} src="/assets/images/temperature.png" alt="Logo" className="m-2" />
                 <p>{formatValue(weatherData.current.temperature2m)}°C</p>

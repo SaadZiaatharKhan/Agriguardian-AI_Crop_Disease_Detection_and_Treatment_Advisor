@@ -8,12 +8,13 @@ import FetchData from "@/components/fetchdata";
 import SeverityChart from "@/components/home/severity-chart";
 import Fertilizer from "@/components/home/fertilizer";
 import Treatment_Plan from "@/components/home/treatment-plan";
+import MarketTrends from "@/components/MarketTrends";
+
 import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   const [data, setData] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
-
   const [selectedLanguage, setSelectedLanguage] = useState("English");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,7 +22,7 @@ export default function Home() {
 
   const refreshData = async () => {
     try {
-      const result = await FetchData(selectedLanguage); // Pass language as a prompt
+      const result = await FetchData(selectedLanguage); // Fetch new data based on the language
       setData(result);
     } catch (err) {
       setError("Failed to fetch data");
@@ -30,7 +31,7 @@ export default function Home() {
 
   useEffect(() => {
     refreshData();
-  }, [selectedLanguage]); // Fetch data whenever language changes
+  }, [selectedLanguage]); // Re-fetch data whenever the language changes
 
   if (error) {
     return <div>{error}</div>;
@@ -83,28 +84,35 @@ export default function Home() {
             <PhotoWindow refreshData={refreshData} language={selectedLanguage} />
           </div>
           <div className="h-1/4 w-2/3 flex justify-center items-center">
-            <Card data={data} language={selectedLanguage} /> {/* Pass language to Card */}
+            <Card data={data} language={selectedLanguage} /> {/* Passing language to Card */}
           </div>
         </div>
 
         <div className="z-40 h-full w-full flex flex-col items-center justify-center p-3 m-3">
           <h2 className="text-6xl m-2 p-2">SEVERITY</h2>
           <div className="h-full w-full">
-            <SeverityChart data={data} language={selectedLanguage} /> {/* Pass language */}
+            <SeverityChart data={data} language={selectedLanguage} /> {/* Passing language */}
           </div>
         </div>
 
         <div className="h-full w-full flex flex-col items-center justify-center p-3 m-3">
           <h2 className="text-6xl m-2 p-2">FERTILIZER</h2>
           <div>
-            <Fertilizer data={data} language={selectedLanguage} /> {/* Pass language */}
+            <Fertilizer data={data} language={selectedLanguage} /> {/* Passing language */}
           </div>
         </div>
 
         <div className="h-full w-full flex flex-col items-center justify-center p-3 m-3">
           <h2 className="text-6xl m-2 p-2">Treatment Plan</h2>
           <div>
-            <Treatment_Plan data={data} language={selectedLanguage} /> {/* Pass language */}
+            <Treatment_Plan data={data} language={selectedLanguage} /> {/* Passing language */}
+          </div>
+        </div>
+
+        <div className="h-full w-full flex flex-col items-center justify-center p-3 m-3">
+          <h2 className="text-6xl m-2 p-2">Crop Market Trends & Selling Advice</h2>
+          <div>
+            <MarketTrends />
           </div>
         </div>
       </div>
