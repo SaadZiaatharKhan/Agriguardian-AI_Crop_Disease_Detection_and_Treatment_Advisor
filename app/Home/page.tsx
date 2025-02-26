@@ -14,7 +14,6 @@ import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   const [data, setData] = useState<any>(null);
-  const [error, setError] = useState<string | null>(null);
   const [selectedLanguage, setSelectedLanguage] = useState("English");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,7 +24,7 @@ export default function Home() {
       const result = await FetchData(selectedLanguage); // Fetch new data based on the language
       setData(result);
     } catch (err) {
-      setError("Failed to fetch data");
+      console.error("Failed to fetch data", err);
     }
   };
 
@@ -33,17 +32,12 @@ export default function Home() {
     refreshData();
   }, [selectedLanguage]); // Re-fetch data whenever the language changes
 
-  if (error) {
-    return <div>{error}</div>;
-  }
-
   if (!data) {
     return <div>Loading...</div>;
   }
 
   return (
     <main className="dark:bg-gradient-to-b from-slate-950 to-blue-950 bg-white h-auto lg:w-full w-fit backdrop-blur-md md:flex flex-col select-none cursor-pointer justify-center items-center relative">
-
       {/* Language Selector */}
       <div className="w-full relative text-left my-4 flex justify-between p-6">
         <div>
@@ -84,28 +78,28 @@ export default function Home() {
             <PhotoWindow refreshData={refreshData} language={selectedLanguage} />
           </div>
           <div className="h-1/4 w-2/3 flex justify-center items-center">
-            <Card data={data} language={selectedLanguage} /> {/* Passing language to Card */}
+            <Card data={data} language={selectedLanguage} />
           </div>
         </div>
 
         <div className="z-40 h-full w-full flex flex-col items-center justify-center p-3 m-3">
           <h2 className="text-6xl m-2 p-2">SEVERITY</h2>
           <div className="h-full w-full">
-            <SeverityChart data={data} language={selectedLanguage} /> {/* Passing language */}
+            <SeverityChart data={data} language={selectedLanguage} />
           </div>
         </div>
 
         <div className="h-full w-full flex flex-col items-center justify-center p-3 m-3">
           <h2 className="text-6xl m-2 p-2">FERTILIZER</h2>
           <div>
-            <Fertilizer data={data} language={selectedLanguage} /> {/* Passing language */}
+            <Fertilizer data={data} language={selectedLanguage} />
           </div>
         </div>
 
         <div className="h-full w-full flex flex-col items-center justify-center p-3 m-3">
           <h2 className="text-6xl m-2 p-2">Treatment Plan</h2>
           <div>
-            <Treatment_Plan data={data} language={selectedLanguage} /> {/* Passing language */}
+            <Treatment_Plan data={data} language={selectedLanguage} />
           </div>
         </div>
 

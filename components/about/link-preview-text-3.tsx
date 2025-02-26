@@ -160,9 +160,6 @@ export default function LinkPreviewText3() {
       </div>
       <h1 className="text-neutral-500 dark:text-neutral-400 text-xl md:text-2xl max-w-3xl mx-auto mb-10 font-bold	text-b">Members:
       </h1>
-      <div className="w-auto h-full">
-      <AnimatedToolTip/>
-      </div>
     </div>
   );
 }

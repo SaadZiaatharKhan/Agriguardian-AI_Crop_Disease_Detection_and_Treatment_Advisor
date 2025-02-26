@@ -58,7 +58,7 @@ export default function MarketTrends() {
 
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <h2 className="text-2xl font-normal mb-4">Market Price Trends</h2>
+      <h2 className="dark:text-black dark:font-bold text-2xl font-normal mb-4">Market Price Trends</h2>
       
       <input
         type="text"

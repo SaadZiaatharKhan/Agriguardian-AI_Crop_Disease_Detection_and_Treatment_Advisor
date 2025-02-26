@@ -9,27 +9,47 @@ const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 async function fetchAbout(disease, language) {
-  const prompt = `Tell About ${disease} in 30 words in ${language} without bold and italic.`;
-  const result = await model.generateContent(prompt);
-  return result.response.text();
+  try {
+    const prompt = `Tell About ${disease} in 30 words in ${language} without bold and italic.`;
+    const result = await model.generateContent(prompt);
+    return result.response.text();
+  } catch (error) {
+    console.error("Error fetching about:", error);
+    return "Unable to fetch about information at this time.";
+  }
 }
 
 async function fetchCauses(disease, severity, language) {
-  const prompt = `Tell Causes of ${disease} of ${severity} in 50 words in ${language} without bold and italic.`;
-  const result = await model.generateContent(prompt);
-  return result.response.text();
+  try {
+    const prompt = `Tell Causes of ${disease} of ${severity} in 50 words in ${language} without bold and italic.`;
+    const result = await model.generateContent(prompt);
+    return result.response.text();
+  } catch (error) {
+    console.error("Error fetching causes:", error);
+    return "Unable to fetch causes information at this time.";
+  }
 }
 
 async function fetchPrevention(disease, language) {
-  const prompt = `Tell Prevention of ${disease} in 50 words in ${language} without bold and italic.`;
-  const result = await model.generateContent(prompt);
-  return result.response.text();
+  try {
+    const prompt = `Tell Prevention of ${disease} in 50 words in ${language} without bold and italic.`;
+    const result = await model.generateContent(prompt);
+    return result.response.text();
+  } catch (error) {
+    console.error("Error fetching prevention:", error);
+    return "Unable to fetch prevention information at this time.";
+  }
 }
 
 async function fetchAftermath(disease, severity, language) {
-  const prompt = `Tell What to do after ${disease} of severity ${severity} in 55 words in ${language} without bold and italic.`;
-  const result = await model.generateContent(prompt);
-  return result.response.text();
+  try {
+    const prompt = `Tell What to do after ${disease} of severity ${severity} in 55 words in ${language} without bold and italic.`;
+    const result = await model.generateContent(prompt);
+    return result.response.text();
+  } catch (error) {
+    console.error("Error fetching aftermath:", error);
+    return "Unable to fetch aftermath information at this time.";
+  }
 }
 
 const ChatInput = ({ onSend }) => {
@@ -51,7 +71,9 @@ const ChatInput = ({ onSend }) => {
         onKeyDown={(e) => e.key === "Enter" && handleSend()}
         className="flex-grow outline-none bg-transparent text-white placeholder-gray-500"
       />
-      <button onClick={handleSend} className="ml-3 text-gray-400 hover:text-white">➜</button>
+      <button onClick={handleSend} className="ml-3 text-gray-400 hover:text-white">
+        ➜
+      </button>
     </div>
   );
 };
@@ -66,10 +88,17 @@ const Card = ({ data, language }) => {
 
   useEffect(() => {
     async function fetchData() {
-      setAbout(await fetchAbout(data["Disease Prediction"], language));
-      setCauses(await fetchCauses(data["Disease Prediction"], data["Severity"], language));
-      setPrevention(await fetchPrevention(data["Disease Prediction"], language));
-      setAftermath(await fetchAftermath(data["Disease Prediction"], data["Severity"], language));
+      const disease = data["Disease Prediction"];
+      const severity = data["Severity"];
+      const aboutText = await fetchAbout(disease, language);
+      const causesText = await fetchCauses(disease, severity, language);
+      const preventionText = await fetchPrevention(disease, language);
+      const aftermathText = await fetchAftermath(disease, severity, language);
+
+      setAbout(aboutText);
+      setCauses(causesText);
+      setPrevention(preventionText);
+      setAftermath(aftermathText);
     }
     fetchData();
   }, [data, language]);
@@ -77,9 +106,14 @@ const Card = ({ data, language }) => {
   const handleQuery = async (query) => {
     setMessages((prev) => [...prev, { text: query, type: "user" }]);
     const prompt = `Answer this query related to ${data["Disease Prediction"]} in 40 words: ${query} in ${language} without bold and italic.`;
-    const result = await model.generateContent(prompt);
-    const response = await result.response.text();
-    setMessages((prev) => [...prev, { text: response, type: "bot" }]);
+    try {
+      const result = await model.generateContent(prompt);
+      const response = await result.response.text();
+      setMessages((prev) => [...prev, { text: response, type: "bot" }]);
+    } catch (error) {
+      console.error("Error generating GPT response:", error);
+      setMessages((prev) => [...prev, { text: "Error processing query.", type: "bot" }]);
+    }
   };
 
   return (
@@ -104,7 +138,6 @@ const Card = ({ data, language }) => {
                 msg.type === "user" ? "bg-blue-500 self-end ml-auto" : "bg-gray-700 self-start"
               }`}
             >
-              {console.log(data)}
               {msg.text}
             </motion.div>
           ))}
@@ -120,7 +153,15 @@ const Card = ({ data, language }) => {
               className="mb-4"
             >
               <h2 className="text-lg font-semibold text-cyan-400">{title}</h2>
-              <p className="text-gray-300">{[data["Disease Prediction"], about, causes, prevention, aftermath][index]}</p>
+              <p className="text-gray-300">
+                {[
+                  data["Disease Prediction"],
+                  about,
+                  causes,
+                  prevention,
+                  aftermath,
+                ][index]}
+              </p>
             </motion.div>
           ))}
         </div>
