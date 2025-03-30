@@ -4,8 +4,8 @@ import { clerkClient } from '@clerk/nextjs/server';
 
 
 //ENter you api key and secret here which you will get from getstream app 
-const api_key = "fe2ewugkpfmz";
-const api_secret ="ggxs6qqhutcht4vdb8tggjb8bnczhq648vrxp7pcm5ux5gdmhj2v5pgm5gdbtwe7";
+const api_key = process.env.GETSTREAM_API_KEY;
+const api_secret =process.env.GETSTREAM_API_SECRET;
 
 // const user_id = "user_2rwpDqaNOBMtVcvGpJKu474zrUJ";
 

@@ -1,0 +1,15 @@
+protobuf>=5.26.1,<6.0
+fastapi
+uvicorn
+numpy
+tensorflow
+Pillow
+geocoder
+openmeteo_requests
+requests-cache
+pandas
+retry-requests
+joblib
+scikit-learn==1.4.1.post1
+scipy
+python-multipart
