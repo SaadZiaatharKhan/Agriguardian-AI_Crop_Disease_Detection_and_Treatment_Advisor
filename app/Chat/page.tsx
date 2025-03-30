@@ -42,7 +42,7 @@ export default async function Chat() {
       <div className="flex flex-wrap justify-center rounded-sm">
         {Topics.map((Topic)=>{
           return(
-            <div key={Topic.img} className=" w-full shadow-gray-500 shadow-lg rounded-md  md:w-1/4 m-4 flex flex-col  items-center p-8">
+            <div key={Topic.img} className=" w-full shadow-white shadow-lg rounded-md  md:w-1/4 m-4 flex flex-col  items-center p-8">
             <Image alt='A learning platform' src={Topic.img} width={300} height={350} className='rounded-lg'></Image>
             <h2 className=' text-2xl pt-2 text-white'>{Topic.Text}</h2>
             <p className='flex flex-col pt-3 pb-5 h-72 text-white'>{Topic.desc}</p>
