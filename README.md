@@ -68,22 +68,25 @@ Agriguardian is an AI-powered crop disease detection system designed to:
 ## Features
 
 - **Accurate Crop Disease Detection:** Achieves up to 94% accuracy using a fine-tuned InceptionV3 model
-  - ![Accuracy](./public/ReadMe/model_accuracy.jpg)
+![Accuracy](./public/ReadMe/model_accuracy.jpg)
 - **Diverse Training:** Trained on 38 different disease classes
-  - ![Classes](./public/ReadMe/train_data_distribution.jpg)
+![Classes](./public/ReadMe/train_data_distribution.jpg)
 - **Interactive User Interface:** Responsive design with clear modals and information displays
-  - ![Home](./public/ReadMe/home.png)
+![Home](./public/ReadMe/home.png)
 - **Comprehensive Disease Insights:** Severity, causes, prevention strategies, and post-disease effects
-  - ![Severity & Details](./public/ReadMe/severity_and_others.png)
+![Severity & Details](./public/ReadMe/severity_and_others.png)
 - **AI-Powered Selling Advice:** Utilizes web scraping and Langchain for market insights
-  - ![Selling Advice](./public/ReadMe/selling_advice.png)
+![Selling Advice](./public/ReadMe/selling_advice.png)
 - **Community Engagement:** In-app discussion forums for user interaction and knowledge sharing
-  - ![Discussion Forums](./public/ReadMe/discussion.png)
+![Discussion Forums](./public/ReadMe/discussion.png)
 - **User Profiles & Library:** Personalized experience with curated content on crop diseases and government schemes
+![Library](./public/ReadMe/library.jpg)
 
 ---
 
 ## Methodology
+
+![Workflow](./public/ReadMe/workflow.png)
 
 The system integrates multiple processes and technologies to deliver real-time and reliable insights.
 
