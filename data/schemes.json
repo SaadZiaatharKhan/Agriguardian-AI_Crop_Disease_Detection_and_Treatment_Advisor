@@ -1,0 +1,52 @@
+[
+    {
+        "id": "pm-kisan",
+        "name": "PM-KISAN",
+        "image": "/PM-KISAN.jpeg",
+        "benefits": "Provides ₹6,000 per year to small and marginal farmers.",
+        "eligibility": "Farmers owning cultivable land; excluding taxpayers and institutional landowners.",
+        "application_process": "Apply online through the PM-KISAN portal or visit the nearest CSC center.",
+        "government_body": "Ministry of Agriculture & Farmers Welfare",
+        "prevention": "Ensures direct income support to farmers to reduce financial burdens."
+    },
+    {
+        "id": "pm-fasal-bima-yojana",
+        "name": "PM Fasal Bima Yojana",
+        "image": "/pm-fasal-bima-yojana.jpeg",
+        "benefits": "Provides insurance coverage for crop loss due to natural calamities.",
+        "eligibility": "All farmers, including sharecroppers and tenant farmers.",
+        "application_process": "Apply through banks, insurance companies, or online portals.",
+        "government_body": "Ministry of Agriculture & Farmers Welfare",
+        "prevention": "Helps farmers recover from financial loss due to crop failure."
+    },
+    {
+        "id": "soil-health-card",
+        "name": "Soil Health Card Scheme",
+        "image": "/Soil Health Card.jpeg",
+        "benefits": "Provides farmers with soil nutrient status and recommendations for fertilizers.",
+        "eligibility": "All farmers are eligible.",
+        "application_process": "Visit the local agriculture office or apply through the government portal.",
+        "government_body": "Department of Agriculture & Cooperation",
+        "prevention": "Promotes sustainable farming by preventing soil degradation."
+    },
+    {
+        "id": "pm-krishi-sinchai-yojana",
+        "name": "PM Krishi Sinchai Yojana",
+        "image": "/PM_Krishi_Sinchai.jpg",
+        "benefits": "Improves water resource management and promotes micro-irrigation techniques.",
+        "eligibility": "Farmers, cooperatives, and NGOs engaged in agriculture.",
+        "application_process": "Apply through state agriculture departments.",
+        "government_body": "Ministry of Agriculture & Farmers Welfare",
+        "prevention": "Aims to conserve water and enhance irrigation efficiency."
+    },
+    {
+        "id": "national-agriculture-market",
+        "name": "National Agriculture Market (e-NAM)",
+        "image": "/national-agriculture-market.jpg",
+        "benefits": "Provides a digital marketplace for farmers to sell produce at fair prices.",
+        "eligibility": "Registered farmers, traders, and buyers.",
+        "application_process": "Register on the e-NAM portal and link with local mandis.",
+        "government_body": "Ministry of Agriculture & Farmers Welfare",
+        "prevention": "Prevents exploitation of farmers by middlemen and ensures fair trade."
+    }
+]

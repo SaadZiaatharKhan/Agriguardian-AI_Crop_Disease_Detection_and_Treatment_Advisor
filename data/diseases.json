@@ -1,0 +1,161 @@
+[
+    {
+        "id": "apple-scab",
+        "name": "Apple Scab",
+        "image": "/apple-scab.jpg",
+        "symptoms": "Dark, scaly lesions on leaves and fruit.",
+        "organic_control": "Use sulfur-based sprays and remove infected leaves.",
+        "chemical_control": "Apply fungicides like Captan or Mancozeb.",
+        "causes": "Caused by the fungus Venturia inaequalis.",
+        "prevention": "Ensure good air circulation and plant disease-resistant varieties."
+    },
+    {
+        "id": "tomato-blight",
+        "name": "Tomato Blight",
+        "image": "/Tomato-scalb.jpeg",
+        "symptoms": "Dark spots on leaves and fruit, leading to rot.",
+        "organic_control": "Use copper sprays and practice crop rotation.",
+        "chemical_control": "Apply chlorothalonil-based fungicides.",
+        "causes": "Caused by Phytophthora infestans fungus.",
+        "prevention": "Avoid overhead watering and space plants properly."
+    },
+    {
+        "id": "black-spot-rose",
+        "name": "Black Spot (Rose)",
+        "image": "/black_Spot_of_roses.jpg",
+        "symptoms": "Black spots on rose leaves, leading to yellowing and defoliation.",
+        "organic_control": "Use neem oil and prune affected leaves.",
+        "chemical_control": "Apply fungicides like chlorothalonil or myclobutanil.",
+        "causes": "Caused by the fungus Diplocarpon rosae.",
+        "prevention": "Ensure good air circulation and avoid overhead watering."
+    },
+    {
+        "id": "apple-black-rot",
+        "name": "Apple Black Rot",
+        "image": "/Black-Rot.jpg",
+        "symptoms": "Dark, sunken lesions on fruit and cankers on branches.",
+        "organic_control": "Prune infected branches and apply neem oil.",
+        "chemical_control": "Use fungicides containing thiophanate-methyl.",
+        "causes": "Caused by the fungus Botryosphaeria obtusa.",
+        "prevention": "Avoid overhead watering and remove fallen debris."
+    },
+    {
+        "id": "cedar-apple-rust",
+        "name": "Cedar Apple Rust",
+        "image": "/Cedar-Apple.jpg",
+        "symptoms": "Orange, gelatinous spore masses on fruit and leaves.",
+        "organic_control": "Remove nearby cedar trees and apply sulfur sprays.",
+        "chemical_control": "Use fungicides like myclobutanil.",
+        "causes": "Caused by Gymnosporangium juniperi-virginianae fungus.",
+        "prevention": "Plant rust-resistant apple varieties."
+    },
+    {
+        "id": "cherry-powdery-mildew",
+        "name": "Cherry Powdery Mildew",
+        "image": "/chrypm.jpg",
+        "symptoms": "White powdery growth on leaves and fruit.",
+        "organic_control": "Apply neem oil or baking soda solution.",
+        "chemical_control": "Use sulfur-based fungicides.",
+        "causes": "Caused by Podosphaera clandestina fungus.",
+        "prevention": "Ensure good air circulation and avoid over-fertilization."
+    },
+    {
+        "id": "corn-cercospora-leaf-spot",
+        "name": "corn cercospora Leaf Spot",
+        "image": "/corn-cercospora.jpg",
+        "symptoms": "Small, dark spots with reddish-purple borders on leaves.",
+        "organic_control": "Rotate crops and use resistant varieties.",
+        "chemical_control": "Apply fungicides containing azoxystrobin.",
+        "causes": "Caused by the fungus Cercospora zeae-maydis.",
+        "prevention": "Avoid excessive nitrogen fertilizer and remove infected debris."
+    },
+    {
+        "id": "maize-common-rust",
+        "name": "Maize Common Rust",
+        "image": "/common_rust.jpg",
+        "symptoms": "Rust-colored pustules on leaves.",
+        "organic_control": "Encourage good air circulation and use resistant hybrids.",
+        "chemical_control": "Apply fungicides like propiconazole.",
+        "causes": "Caused by the fungus Puccinia sorghi.",
+        "prevention": "Plant rust-resistant corn varieties and rotate crops."
+    },
+    {
+        "id": "corn-northern-leaf-blight",
+        "name": "Corn Northern Leaf Blight",
+        "image": "/Northern-Corn.png",
+        "symptoms": "Gray-green or brown elliptical lesions on leaves.",
+        "organic_control": "Practice crop rotation and increase plant spacing.",
+        "chemical_control": "Use fungicides like mancozeb or chlorothalonil.",
+        "causes": "Caused by the fungus Exserohilum turcicum.",
+        "prevention": "Use resistant hybrids and avoid dense planting."
+    },
+    {
+        "id": "grape-black-rot",
+        "name": "Grape Black Rot",
+        "image": "/80111791.jpg",
+        "symptoms": "Dark, sunken lesions on fruit that dry and shrivel.",
+        "organic_control": "Prune infected vines and use neem oil.",
+        "chemical_control": "Apply fungicides containing myclobutanil.",
+        "causes": "Caused by the fungus Guignardia bidwellii.",
+        "prevention": "Remove infected leaves and avoid overhead irrigation."
+    },
+    {
+        "id": "grape-black-measles",
+        "name": "Grape Black Measles",
+        "image": "/grape-black.jpeg",
+        "symptoms": "Dark streaks on vines and brown spotting on fruit.",
+        "organic_control": "Remove infected wood and improve soil drainage.",
+        "chemical_control": "Use fungicides like thiophanate-methyl.",
+        "causes": "Caused by multiple fungal species including Phaeomoniella chlamydospora.",
+        "prevention": "Avoid excessive irrigation and prune affected branches."
+    },
+    {
+        "id": "grape-leaf-blight",
+        "name": "Grape Leaf Blight",
+        "image": "/grape-leaf-blight.jpeg",
+        "symptoms": "Brown, V-shaped lesions on leaves with yellow margins.",
+        "organic_control": "Apply compost tea and prune infected leaves.",
+        "chemical_control": "Use copper-based fungicides.",
+        "causes": "Caused by Pseudocercospora vitis fungus.",
+        "prevention": "Ensure proper air circulation and use resistant varieties."
+    },
+    {
+        "id": "orange-citrus-greening",
+        "name": "Orange Citrus Greening",
+        "image": "/orange-citrus-greening.jpg",
+        "symptoms": "Yellow mottling on leaves and misshapen, bitter fruit.",
+        "organic_control": "Introduce beneficial insects to control psyllids.",
+        "chemical_control": "Apply insecticides to control vector insects.",
+        "causes": "Caused by the bacterium Candidatus Liberibacter spp.",
+        "prevention": "Remove infected trees and use disease-free seedlings."
+    },
+    {
+        "id": "peach-bacterial-spot",
+        "name": "Peach Bacterial Spot",
+        "image": "/peach-bacterial-spot.jpeg",
+        "symptoms": "Small, dark spots on leaves and fruit, leading to defoliation.",
+        "organic_control": "Prune affected branches and apply neem oil.",
+        "chemical_control": "Use copper-based bactericides.",
+        "causes": "Caused by the bacterium Xanthomonas arboricola.",
+        "prevention": "Ensure good drainage and remove infected plant material."
+    },
+    {
+        "id": "pepper-bell-bacterial-spot",
+        "name": "Pepper Bell Bacterial Spot",
+        "image": "/pepper-bell-bacterial-spot.jpeg",
+        "symptoms": "Water-soaked lesions on leaves and fruit.",
+        "organic_control": "Use copper sprays and rotate crops.",
+        "chemical_control": "Apply bactericides containing streptomycin.",
+        "causes": "Caused by Xanthomonas campestris bacteria.",
+        "prevention": "Avoid overhead watering and use disease-free seeds."
+    },{
+        "id": "strawberry-leaf-scorch",
+        "name": "Strawberry Leaf Scorch",
+        "image": "/strawberry-leaf-scorch.jpg",
+        "symptoms": "Reddish-brown spots on leaves that merge, leading to leaf death.",
+        "organic_control": "Improve air circulation and remove infected leaves.",
+        "chemical_control": "Apply fungicides containing myclobutanil.",
+        "causes": "Caused by the fungus Diplocarpon earlianum.",
+        "prevention": "Avoid overhead watering and use resistant strawberry varieties."
+    }
+]
